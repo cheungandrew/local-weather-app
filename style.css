@@ -2,6 +2,7 @@ body {
     background-image: url(images/sky.jpeg);
     font-size: 1.5rem;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media (min-width: 1250px) {
