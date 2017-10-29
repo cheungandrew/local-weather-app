@@ -8,7 +8,7 @@ body {
 
 @media (max-width: 767px) {
     .weather {
-        width: 450px;
+        width: 300px;
     }
 }
 
@@ -29,5 +29,14 @@ body {
     border-radius: 1%;
     background-color: #D1E1FF;   
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;  
+    padding-bottom: 10px; 
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
 }
