@@ -1,0 +1,16 @@
+body {
+    background-image: url(images/sky.jpeg);
+    font-size: 1.5rem;
+}
+
+@media (min-width: 1250px) {
+    .weather {
+        margin-top: 50px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #D1E1FF;
+        border-radius: 1%;
+        
+    }
+}
