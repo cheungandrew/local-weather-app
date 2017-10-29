@@ -20,7 +20,7 @@ function success(position) {
     var units = "&units=metric";
     var urlWeather = api + weather + "lat=" + lat + "&lon=" + long + apiKey + units;
 
-
+    // Show weather data from JSON
     $.getJSON(urlWeather, function (data) {
         $(".city").html("<p>" + data.name + "</p>");
         $(".temp").html("<p>" + data.main.temp + " &deg;C</p>");
