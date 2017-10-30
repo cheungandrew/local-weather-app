@@ -10,7 +10,7 @@ function showCurrentWeather() {
 
 // Run if getCurrentPosition is successful
 function success(position) {
-    
+
     // Obtaining current lat and lon
     var lat = position.coords.latitude;
     var long = position.coords.longitude;
@@ -42,7 +42,7 @@ function success(position) {
     });
 }
 
-// Run if getCurrentLocation has an error
+// Run if getCurrentPosition has an error
 function error(error) {
     alert("Error: " + error.message);
 }
