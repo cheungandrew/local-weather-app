@@ -2,13 +2,15 @@ function showCurrentWeather() {
 
     // Checking if browser supports Geolocation
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(success);
+        navigator.geolocation.getCurrentPosition(success, error);
     } else {
         alert("Browser does not support geolocation.");
     }
 }
 
+// Run if getCurrentPosition is successful
 function success(position) {
+    
     // Obtaining current lat and lon
     var lat = position.coords.latitude;
     var long = position.coords.longitude;
@@ -27,6 +29,7 @@ function success(position) {
         $(".icon").html("<img src='https://openweathermap.org/img/w/" + data.weather[0].icon + ".png'>");
         $(".desc").html("<p>" + data.weather[0].description);
 
+        // Change degrees between Celcius and Fahrenheit on btn click
         $(".btn").click(function degreesChange() {
             if ($(".btn").text() == "Fahrenheit") {
                 $(".btn").html("Celcius");
@@ -37,6 +40,11 @@ function success(position) {
             }
         });
     });
+}
+
+// Run if getCurrentLocation has an error
+function error(error) {
+    alert("Error: " + error.message);
 }
 
 
