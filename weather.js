@@ -30,7 +30,7 @@ function success(position) {
         $(".btn").click(function degreesChange() {
             if ($(".btn").text() == "Fahrenheit") {
                 $(".btn").html("Celcius");
-                $(".temp").html("<p>" + (data.main.temp * 1.8 + 32) + " &deg;F</p>");
+                $(".temp").html("<p>" + Math.round((data.main.temp * 1.8 + 32) * 100) / 100 + " &deg;F</p>");
             } else {
                 $(".btn").html("Fahrenheit");
                 $(".temp").html("<p>" + data.main.temp + " &deg;C</p>");
