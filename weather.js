@@ -45,6 +45,7 @@ function success(position) {
 // Run if getCurrentPosition has an error
 function error(error) {
     alert("Error: " + error.message);
+    $(".city").html("<p>Error: " + error.message + "</p>");
 }
 
 
