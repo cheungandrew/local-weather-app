@@ -1,5 +1,4 @@
 function showCurrentWeather() {
-
     // Checking if browser supports Geolocation
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(success, error);
@@ -10,7 +9,6 @@ function showCurrentWeather() {
 
 // Run if getCurrentPosition is successful
 function success(position) {
-
     // Obtaining current lat and lon
     var lat = position.coords.latitude;
     var long = position.coords.longitude;
