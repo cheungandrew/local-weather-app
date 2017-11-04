@@ -4,6 +4,7 @@ function showCurrentWeather() {
         navigator.geolocation.getCurrentPosition(success, error);
     } else {
         alert("Browser does not support geolocation.");
+        $(".city").html("Browser does not support geolocation.");
     }
 }
 
